@@ -22,7 +22,7 @@ async function fetchData(aiChatBox) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "x-goog-api-key":"AIzaSyBBadk6NmD4x7OKJCzN9OZex0A6IP_K2Lg"
+      "x-goog-api-key":"YOUR_API_KEY"
     },
     body: JSON.stringify({
       contents: [
@@ -138,3 +138,4 @@ imageinput.addEventListener("change", () => {
 imagebtn.addEventListener("click", () => {
   imagebtn.querySelector("input").click();
 });
+
