@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", Calibri, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/conny-schneider-pREq0ns_p_E-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-container {
+  width: 100%;
+  height: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+}
+
+/* USER + AI AVATAR */
+.user-chat-box img,
+.ai-chat-box img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: drop-shadow(2px 2px 10px black);
+}
+
+/* USER CHAT */
+.user-chat-box {
+  width: 80%;
+  align-self: flex-end;
+}
+
+.user-chat-area {
+  width: 100%;
+  padding: 15px;
+  background: black;
+  color: white;
+  border-radius: 40px 0 40px 40px;
+  box-shadow: 2px 2px 10px black;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* AI CHAT */
+.ai-chat-box {
+  width: 80%;
+  align-self: flex-start;
+}
+
+.ai-chat-area {
+  width: 100%;
+  padding: 15px;
+  background: rgba(57, 56, 56, 0.7);
+  color: white;
+  border-radius: 0 40px 40px 40px;
+  box-shadow: 2px 2px 10px black;
+}
+
+/* IMAGE IN CHAT */
+.chat-image {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* PROMPT AREA */
+.prompt-area {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.prompt-area input {
+  width: 50%;
+  height: 50px;
+  background: black;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  padding: 15px;
+  color: white;
+  font-size: 18px;
+  box-shadow: 2px 2px 10px black;
+}
+
+.prompt-area button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: black;
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px black;
+}
+
+.prompt-area button:hover {
+  background: rgba(80, 80, 80, 0.5);
+}
+
+
